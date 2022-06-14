@@ -1,0 +1,1 @@
+enum TypeFuture { short, long }

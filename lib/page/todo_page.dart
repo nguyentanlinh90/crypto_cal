@@ -12,11 +12,9 @@ class TodoPage extends StatefulWidget {
 }
 
 class _TodoPageState extends State<TodoPage> {
-  TextEditingController entryController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.white,
       body: Text("Todo"),
     );
@@ -24,7 +22,6 @@ class _TodoPageState extends State<TodoPage> {
 
   @override
   void dispose() {
-    entryController.dispose();
     super.dispose();
   }
 }

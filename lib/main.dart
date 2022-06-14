@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:crypto_cal/page/home_page.dart';
 import 'package:crypto_cal/page/todo_page.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List pages = [const HomePage(), const TodoPage()];
 
   void onTap(int index) {
+    log("message index: $index");
     setState(() {
       currentIndex = index;
     });
@@ -47,15 +50,17 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: AppColors.white,
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: Text("Crypto Calculator"),
+        title: const Text("Crypto Calculator"),
       ),
       body: pages[0],
-      bottomNavigationBar: BottomNavigationBar(
+      /*bottomNavigationBar: BottomNavigationBar(
         unselectedFontSize: 0,
         selectedFontSize: 0,
         type: BottomNavigationBarType.fixed,
         backgroundColor: AppColors.primaryColor,
-        onTap: onTap,
+        onTap: (index) {
+          onTap(index);
+        },
         currentIndex: currentIndex,
         selectedItemColor: Colors.grey[500],
         unselectedItemColor: Colors.grey.withOpacity(0.5),
@@ -88,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: AppColors.blackGrey,
               )),
         ],
-      ),
+      ),*/
     );
   }
 }

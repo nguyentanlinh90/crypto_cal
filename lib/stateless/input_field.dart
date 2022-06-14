@@ -9,7 +9,7 @@ class InputField extends StatelessWidget {
   final bool obscureText;
   final int maxLength;
   final TextInputType textInputType;
-  final VoidCallback? onChange;
+  // final VoidCallback? onChange;
   final Function(String)? onTextChanged;
 
   const InputField({
@@ -19,14 +19,14 @@ class InputField extends StatelessWidget {
     this.obscureText = false,
     this.maxLength = 20,
     this.textInputType = TextInputType.text,
-    this.onChange,
+    // this.onChange,
     this.onTextChanged,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: AppTextStyles.h5().copyWith(color: AppColors.primaryColor, fontWeight: FontWeight.bold),
+      style: AppTextStyles.h5().copyWith(color: AppColors.black, fontWeight: FontWeight.bold),
       controller: controller,
       cursorColor: AppColors.primaryColor,
       obscureText: obscureText,
