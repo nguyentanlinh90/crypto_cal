@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                                     flex: 3,
                                     child: Center(
                                         child: Text(
-                                            entry.percentTakeProfit.toString(),
+                                            entry.percentTakeProfit.toString() + " %",
                                             style: AppTextStyles.h5().copyWith(
                                                 fontWeight: FontWeight.bold))),
                                   ),
@@ -245,7 +245,7 @@ class _HomePageState extends State<HomePage> {
                                     flex: 3,
                                     child: Center(
                                         child: Text(
-                                            entry.percentStopLoss.toString(),
+                                            entry.percentStopLoss.toString() + " %",
                                             style: AppTextStyles.h5().copyWith(
                                                 fontWeight: FontWeight.bold))),
                                   ),
