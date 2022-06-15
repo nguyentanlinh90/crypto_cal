@@ -38,7 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
   List pages = [const HomePage(), const TodoPage()];
 
   void onTap(int index) {
-    log("message index: $index");
     setState(() {
       currentIndex = index;
     });
