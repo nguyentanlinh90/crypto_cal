@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Row(
+              /*Row(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 16),
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
               ),
               const SizedBox(
                 height: 20,
-              ),
+              ),*/
               Row(
                 children: <Widget>[
                   Expanded(
